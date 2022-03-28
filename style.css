@@ -84,3 +84,27 @@ div {
   padding-top: 175px;
   text-align: center;
 }
+
+.contact{
+  padding: 10px 30px;
+  position: fixed;
+  left: -20px;
+  top: 180px;
+  transform: rotate(-90deg);
+  
+
+}
+
+.tag{
+  position: fixed;
+  top: 166px;
+  left: 152px;
+  padding: 10px 30px ;
+}
+
+.year{
+  position: fixed;
+  top: 556px;
+  left: 152px;
+  padding: 10px 30px ;
+}
