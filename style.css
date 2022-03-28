@@ -108,3 +108,36 @@ div {
   left: 152px;
   padding: 10px 30px ;
 }
+
+.images{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+
+.img{
+  width: 140px;
+  height: 180px;
+  
+  
+  opacity: 0.6;
+}
+
+.img-0{
+  transform: scale(1);
+  background: url(/siteweb/images/image0.jpeg) 50% 50 no-repeat;
+  background-size: cover;
+}
+
+.img-1{
+  transform: scale(1.4);
+  background: url(/siteweb/images/image1.jpeg) 50% 50 no-repeat;
+  background-size: cover;
+}
+.img-2{
+  transform: scale(1.2);
+  background: url(/siteweb/images/image2.jpeg) 50% 50 no-repeat;
+  background-size: cover;
+}
