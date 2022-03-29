@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Space+Grotesk:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
 
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+  font-family: 'Ovo', serif;
+}
 
 /*CSS_page index*/
 html, body {
   margin: 0;
   padding: 0;
   cursor: none;
+  box-sizing: border-box;
+  
 }
 
 .nav-wrapper {
@@ -81,18 +92,8 @@ html, body {
 }
 
 div {
-  padding-top: 175px;
-  text-align: center;
-}
-
-.contact{
-  padding: 10px 30px;
-  position: fixed;
-  left: -20px;
-  top: 180px;
-  transform: rotate(-90deg);
   
-
+  text-align: center;
 }
 
 .tag{
@@ -102,42 +103,112 @@ div {
   padding: 10px 30px ;
 }
 
-.year{
-  position: fixed;
-  top: 556px;
-  left: 152px;
-  padding: 10px 30px ;
+
+
+
+
+/*CSS_page-projets*/
+
+.container-items{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  
 }
 
-.images{
+.item{
+  position: relative;
+  flex-grow: 1;
+  font-size: 100px;
+  transition: all 300ms ease-in-out;
+}
+
+.item:hover{
+  font-size: 200px;
+  flex-grow: 2;
+}
+
+h3{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: black;
+}
+
+img{
+  width: 100%;
+}
+
+.container-img-wrap{
+  position: absolute;
+  top: -60rem;
+  left: -80px;
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  
+  visibility: hidden;
+}
+
+.container-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+@media (max-width: 900px){
+  .container-items{
+    height: 100px;
+  }
+  .item{
+    font-size: 20px;
+  }
+
+  .item:hover{
+    flex-grow: 1;
+    font-size: 20px;
+  }
+
+  .container-img-wrap{
+    display: none;
+
+  }
+
+  .navbar{
+    display: none !important;
+  }
+}
+
+
+
+.navbar {
   display: flex;
+  justify-content: space-between;
+  line-height: 100px;
+ 
 }
 
-.img{
-  width: 140px;
-  height: 180px;
+.header{
   
-  
-  opacity: 0.6;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  line-height: 100px;
+  z-index: 2 ;
 }
 
-.img-0{
-  transform: scale(1);
-  background: url(/siteweb/images/image0.jpeg) 50% 50 no-repeat;
-  background-size: cover;
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.img-1{
-  transform: scale(1.4);
-  background: url(/siteweb/images/image1.jpeg) 50% 50 no-repeat;
-  background-size: cover;
-}
-.img-2{
-  transform: scale(1.2);
-  background: url(/siteweb/images/image2.jpeg) 50% 50 no-repeat;
-  background-size: cover;
-}
+
+
