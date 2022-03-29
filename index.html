@@ -13,21 +13,62 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.life.js"></script>
-  <title>bonjour!</title>
+ 
+
+
+  <title>ekesndesign</title>
 
 </head>
 
 <body>
-  <div class="nav-wrapper">
+  <div class="cursor"></div>
+
+  <div class="container">
     <nav>
-      <a href="home.html" class="hover-this"><span>home</span></a>
-      <a href="about.html" class="hover-this"><span>about</span></a>
-      <a href="projets.html" class="hover-this"><span>projets</span></a>
-      <a href="#" class="hover-this"><span>contact</span></a>
-      <div class="cursor"></div>
+      <input type="checkbox" id="nav" class="hidden">
+      <label for="nav" class="nav-btn">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projets.html">projets</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+
+
+
+      
     </nav>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div class="intro__content">
@@ -56,13 +97,6 @@
   </div>
 
 
-
-
-
-
-
-
-
   <script>
     (function () {
       const link = document.querySelectorAll('nav > .hover-this');
@@ -88,6 +122,12 @@
     })();
 
   </script>
+
+
+
+
+
+
 
 
 </body>
