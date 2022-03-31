@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Contact Me !</title>
-
+  <script src="circletype.min.js"></script>
 
  
   <link rel="stylesheet" href="style.css">
@@ -35,7 +35,7 @@
     </nav>
   </div>
 
-    
+
  
 
   <header>Get in touch ! </header>
@@ -50,6 +50,23 @@
       </form>
 
 
+      <div id="container">
+        <div id="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300" xml:space="preserve">
+            <defs>
+              <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none" />
+            <g>
+              <use xlink:href="#circlePath" fill="none" />
+              <text fill="#000">
+                <textPath xlink:href="#circlePath">let's work together</textPath>
+              </text>
+            </g>
+          </svg>
+        </div>
+      </div>
   
 </body>
 
