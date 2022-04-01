@@ -800,3 +800,27 @@ h3 {
 
 
 
+.list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 25px;
+}
+
+.list-item{
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.list-item:hover::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 5px;
+}
+
+.list-item:hover{
+  height: .5em;
+  overflow: hidden;
+}
